@@ -1,0 +1,49 @@
+{% extends 'base.html' %}
+{% load bootstrap4 %}
+{% block content %}
+
+<div class="text-center container">
+
+    <h2 class="notify">Hello i am {{ user }}</h2>
+<h5>I have got {{ blogs|length }} blogs, feel free to check them out</h5>
+    <br>
+{% for blog in blogs %}
+
+    <div class="card text-center custom-card">
+      <div class="card-body">
+        <h4><a class="userprofilebtitle" href={{ blog.blog_slug }}>{{ blog.blog_title }}</a></h4>
+        <h4 class="userprofilebcontent"> {{ blog.blog_content|safe|truncatewords:30 }}</h4>
+      </div>
+    </div>
+
+<br>
+{% endfor %}
+</div>
+
+    <div class="d-flex justify-content-center">
+
+	{% if is_paginated %}
+
+	      {% if page_obj.has_previous %}
+	        <a class="btn btn-outline-info mb-4" href="?page=1">First</a>
+	        <a class="btn btn-outline-info mb-4" href="?page={{ page_obj.previous_page_number }}">Previous</a>
+	      {% endif %}
+
+	      {% for num in page_obj.paginator.page_range %}
+	        {% if page_obj.number == num %}
+	          <a class="btn btn-info mb-4" href="?page={{ num }}">{{ num }}</a>
+	        {% elif num > page_obj.number|add:'-3' and num < page_obj.number|add:'3' %}
+	          <a class="btn btn-outline-info mb-4" href="?page={{ num }}">{{ num }}</a>
+	        {% endif %}
+	      {% endfor %}
+
+	      {% if page_obj.has_next %}
+	        <a class="btn btn-outline-info mb-4" href="?page={{ page_obj.next_page_number }}">Next</a>
+	        <a class="btn btn-outline-info mb-4" href="?page={{ page_obj.paginator.num_pages }}">Last</a>
+	      {% endif %}
+
+	    {% endif %}
+
+	</div>
+
+{% endblock content %}

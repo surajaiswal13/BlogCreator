@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% load bootstrap4 %}
+
+{% block content %}
+
+    <form class="form-group mb-3 form-control-sm" action="{% url 'blog:blogcreate' %}" method='POST' enctype="multipart/form-data" >
+
+        <br>
+        <br>
+        <br>
+        <br>
+
+        {% csrf_token %}
+
+        {% bootstrap_form form %}
+        <br>
+
+        <!-- {{ form.media }} - form.media is used for displaying the content iof editor -->
+        <button class="testbutton" type="submit" value="Submit">Submit</button>
+
+        {{ form.media }}
+    </form>
+    
+{% endblock content %}
+    

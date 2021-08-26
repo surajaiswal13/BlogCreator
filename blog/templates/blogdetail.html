@@ -1,0 +1,63 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+
+<div class="container">
+
+    <h6></h6>
+    <h2 class="d-flex justify-content-center blogtitle">{{ blogcreate.blog_title }}</h2>
+		    <h6 class="text-center">
+			Posted By
+		<a style="  color: #03e9f4;" href="{% url 'blog:bloglist' username=user %}">@{{ blogcreate.user }}</a> on {{ blogcreate.created_at }}
+	</h6>
+	<br>
+    <h4 class="d-flex justify-content-center">{{ blogcreate.blog_content|safe }}</h4> <!-- Use safe -->
+		{% if blogcreate.image %}
+			<div class=""></div>
+				<img class="center" src="{{ blogcreate.image.url }}" alt="image" style="height:500px;width:700px">
+			<br><br>
+		{% endif %}
+
+		{% if blogcreate.video %}
+
+		{# VIDEO IN-CONTENT POSTER #}
+
+		<video class="center" src="{{ blogcreate.video.url }}" poster="{{ MEDIA_URL }}" controls >
+		</video>
+
+		<br><br>
+		{% endif %}
+
+		{% if blogcreate.file %}
+			<a class="center btn btn-outline-info" href="{{ blogcreate.file.url }}" class="btn btn-outline-danger btn-sm downloadbt" style="border-radius:10%;" target="_blank"><i class="fas fa-file-download"></i>  File</a>
+
+			<br><br>
+		{% endif %}
+
+	<div class="container text-center justify-content-center">
+
+		        <form class="form-group">
+			{# Search for Your vanity URL #}
+			<input style="width:30%;" class="form-input copyinput" type="text" id="myInput" value="http://127.0.0.1:8000{{ request.path }}">
+<!--            <input type="text"  value="{{ request.get_full_path }}">   will try for hosted one-->
+	    <button class="testbutton registerbutton" onclick="CopyToClipboard()">Copy and Share</button>
+        </form>
+
+<!--Share Buttons-->
+<!---->
+		{% if user.is_authenticated %}
+<!--			<a href=">Update</a-->
+			<a class="btn btn-outline-success" href="{% url 'blog:blogupdate' username=user.username blog_slug=blogcreate.blog_slug %}">Update</a>
+			<a class="btn btn-outline-danger" href="{% url 'blog:blogdelete' username=user.username blog_slug=blogcreate.blog_slug %}">Delete</a>
+
+		{% endif %}
+
+
+
+	</div>
+
+</div>
+
+{% endblock content %}
+

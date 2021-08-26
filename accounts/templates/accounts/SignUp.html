@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% load bootstrap4 %}
+
+{% block content %}
+
+<div class="container login-box register">
+    <form method="POST" enctype="multipart/form-data">
+
+        {% csrf_token %}
+
+        <div class="user-box">
+
+            {# SignUp form #}
+            {% bootstrap_form form %}
+
+        </div>
+
+        <button class="btn-radium" type="submit">Register</button>
+
+    </form>
+</div>
+
+{% endblock content %}

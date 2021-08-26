@@ -1,0 +1,80 @@
+2021-08-21 19:40:55,201:blog:INFO:BlogListView -get_queryset Success
+2021-08-21 19:40:55,201:blog:INFO:BlogListView -get_queryset Success
+2021-08-21 19:40:55,201:blog:INFO:BlogListView -get_queryset Success
+2021-08-21 19:40:55,201:blog:INFO:BlogListView -get_queryset Success
+2021-08-21 19:40:55,201:blog:INFO:BlogListView -get_queryset Success
+2021-08-21 19:41:22,510:blog:INFO:BlogCreateView Form Validation Success
+2021-08-21 19:41:22,510:blog:INFO:BlogCreateView Form Validation Success
+2021-08-21 19:41:22,510:blog:INFO:BlogCreateView Form Validation Success
+2021-08-21 19:41:22,510:blog:INFO:BlogCreateView Form Validation Success
+2021-08-21 19:41:22,510:blog:INFO:BlogCreateView Form Validation Success
+2021-08-21 19:41:22,567:blog:INFO:BlogCreate - get_absolute_url success
+2021-08-21 19:41:22,567:blog:INFO:BlogCreate - get_absolute_url success
+2021-08-21 19:41:22,567:blog:INFO:BlogCreate - get_absolute_url success
+2021-08-21 19:41:22,567:blog:INFO:BlogCreate - get_absolute_url success
+2021-08-21 19:41:22,567:blog:INFO:BlogCreate - get_absolute_url success
+2021-08-21 19:43:35,410:blog:INFO:BlogCreateView Form Validation Success
+2021-08-21 19:43:35,410:blog:INFO:BlogCreateView Form Validation Success
+2021-08-21 19:43:35,410:blog:INFO:BlogCreateView Form Validation Success
+2021-08-21 19:43:35,410:blog:INFO:BlogCreateView Form Validation Success
+2021-08-21 19:43:35,410:blog:INFO:BlogCreateView Form Validation Success
+2021-08-21 19:43:36,790:blog:INFO:BlogCreate - get_absolute_url success
+2021-08-21 19:43:36,790:blog:INFO:BlogCreate - get_absolute_url success
+2021-08-21 19:43:36,790:blog:INFO:BlogCreate - get_absolute_url success
+2021-08-21 19:43:36,790:blog:INFO:BlogCreate - get_absolute_url success
+2021-08-21 19:43:36,790:blog:INFO:BlogCreate - get_absolute_url success
+2021-08-21 19:46:34,462:blog:INFO:BlogCreateView Form Validation Success
+2021-08-21 19:46:34,462:blog:INFO:BlogCreateView Form Validation Success
+2021-08-21 19:46:34,462:blog:INFO:BlogCreateView Form Validation Success
+2021-08-21 19:46:34,462:blog:INFO:BlogCreateView Form Validation Success
+2021-08-21 19:46:34,462:blog:INFO:BlogCreateView Form Validation Success
+2021-08-21 19:46:34,526:blog:INFO:BlogCreate - get_absolute_url success
+2021-08-21 19:46:34,526:blog:INFO:BlogCreate - get_absolute_url success
+2021-08-21 19:46:34,526:blog:INFO:BlogCreate - get_absolute_url success
+2021-08-21 19:46:34,526:blog:INFO:BlogCreate - get_absolute_url success
+2021-08-21 19:46:34,526:blog:INFO:BlogCreate - get_absolute_url success
+2021-08-21 19:50:14,104:blog:INFO:BlogCreateView Form Validation Success
+2021-08-21 19:50:14,104:blog:INFO:BlogCreateView Form Validation Success
+2021-08-21 19:50:14,104:blog:INFO:BlogCreateView Form Validation Success
+2021-08-21 19:50:14,104:blog:INFO:BlogCreateView Form Validation Success
+2021-08-21 19:50:14,104:blog:INFO:BlogCreateView Form Validation Success
+2021-08-21 19:50:15,560:blog:INFO:BlogCreate - get_absolute_url success
+2021-08-21 19:50:15,560:blog:INFO:BlogCreate - get_absolute_url success
+2021-08-21 19:50:15,560:blog:INFO:BlogCreate - get_absolute_url success
+2021-08-21 19:50:15,560:blog:INFO:BlogCreate - get_absolute_url success
+2021-08-21 19:50:15,560:blog:INFO:BlogCreate - get_absolute_url success
+2021-08-21 19:58:18,101:blog:INFO:BlogListView -get_queryset Success
+2021-08-21 19:58:18,101:blog:INFO:BlogListView -get_queryset Success
+2021-08-21 19:58:18,101:blog:INFO:BlogListView -get_queryset Success
+2021-08-21 19:58:18,101:blog:INFO:BlogListView -get_queryset Success
+2021-08-21 19:58:18,101:blog:INFO:BlogListView -get_queryset Success
+2021-08-21 19:59:18,252:blog:INFO:BlogListView -get_queryset Success
+2021-08-21 19:59:18,252:blog:INFO:BlogListView -get_queryset Success
+2021-08-21 19:59:18,252:blog:INFO:BlogListView -get_queryset Success
+2021-08-21 19:59:18,252:blog:INFO:BlogListView -get_queryset Success
+2021-08-21 19:59:18,252:blog:INFO:BlogListView -get_queryset Success
+2021-08-21 19:59:24,284:blog:INFO:BlogListView -get_queryset Success
+2021-08-21 19:59:24,284:blog:INFO:BlogListView -get_queryset Success
+2021-08-21 19:59:24,284:blog:INFO:BlogListView -get_queryset Success
+2021-08-21 19:59:24,284:blog:INFO:BlogListView -get_queryset Success
+2021-08-21 19:59:24,284:blog:INFO:BlogListView -get_queryset Success
+2021-08-21 19:59:29,349:blog:INFO:BlogListView -get_queryset Success
+2021-08-21 19:59:29,349:blog:INFO:BlogListView -get_queryset Success
+2021-08-21 19:59:29,349:blog:INFO:BlogListView -get_queryset Success
+2021-08-21 19:59:29,349:blog:INFO:BlogListView -get_queryset Success
+2021-08-21 19:59:29,349:blog:INFO:BlogListView -get_queryset Success
+2021-08-21 19:59:34,799:blog:INFO:BlogListView -get_queryset Success
+2021-08-21 19:59:34,799:blog:INFO:BlogListView -get_queryset Success
+2021-08-21 19:59:34,799:blog:INFO:BlogListView -get_queryset Success
+2021-08-21 19:59:34,799:blog:INFO:BlogListView -get_queryset Success
+2021-08-21 19:59:34,799:blog:INFO:BlogListView -get_queryset Success
+2021-08-21 20:00:39,630:blog:INFO:BlogListView -get_queryset Success
+2021-08-21 20:00:39,630:blog:INFO:BlogListView -get_queryset Success
+2021-08-21 20:00:39,630:blog:INFO:BlogListView -get_queryset Success
+2021-08-21 20:00:39,630:blog:INFO:BlogListView -get_queryset Success
+2021-08-21 20:00:39,630:blog:INFO:BlogListView -get_queryset Success
+2021-08-21 20:06:44,903:blog:INFO:BlogListView -get_queryset Success
+2021-08-21 20:06:44,903:blog:INFO:BlogListView -get_queryset Success
+2021-08-21 20:06:44,903:blog:INFO:BlogListView -get_queryset Success
+2021-08-21 20:06:44,903:blog:INFO:BlogListView -get_queryset Success
+2021-08-21 20:06:44,903:blog:INFO:BlogListView -get_queryset Success

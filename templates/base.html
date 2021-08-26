@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Show</title>
+
+    {# bootstrap #}
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    {# Custom css #}
+<!--    form.css-->
+<!--    <link rel="stylesheet" href="form.css">-->
+    <link type="text/css" rel="stylesheet" href="{% static 'css/form.css' %}">
+    <link type="text/css" rel="stylesheet" href="{% static 'css/master.css' %}">
+
+<!--    <link rel="stylesheet" type="text/css" href="{% static 'css/master.css' %}">-->
+
+<!--    <link rel="stylesheet" href="{% static 'css/nav.css' %}">-->
+
+    {# Font Awesome #}
+    <script src="https://kit.fontawesome.com/56c14be9a2.js" crossorigin="anonymous"></script>
+
+    {# Google Fonts #}
+    {# WindSong & Monte-Carlo #}
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=MonteCarlo&family=WindSong&display=swap" rel="stylesheet">
+
+</head>
+  <body class="">
+    <div class="">
+
+        <nav class="navbar navbar-expand-sm" role=navigation>
+      <div class="container">
+
+        {# NOTE : INSTEAD OF LINK <a> WE ARE USING <button> tag so we are using javascript onclick='location.href="https://#"' INSTEAD OF href #}
+
+<!--          <a class="navbar-brand navb nav-custom align-items-center" href="{% url 'home' %}">BlogShow</a>-->
+          <button class="navbar-brand navb align-items-center" onclick='location.href="{% url 'home' %}"'>BlogShow</button>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#hamburger" aria-controls="hamburger" aria-expanded="false" aria-label="Toggle navigation">
+            <span style="color:white" class="fas fa-bars"></span>
+          </button>
+
+            <div class="collapse navbar-collapse" id=hamburger>
+
+                {# NOTE: Remove ml-auto after customizing navbar then add ml-auto to shift elements to right side #}
+              <div class="navbar-nav ml-auto">
+
+                {% if user.is_authenticated %}
+    <!--              <a class="nav-item nav-link nav-custom" href="#" class="btn btn-simple"><i class="fas fa-plus"></i> Post</a>-->
+                  <button class="nav-item nav-link testbutton navbuttons loggedbuttons" onclick='location.href="{% url 'blog:blogcreate' %}"'><i class="fas fa-plus"></i>Create</button>
+    <!--              <a class="nav-item nav-link nav-custom" href="#" class="btn btn-simple">Groups</a>-->
+<!--                  <button class="nav-item nav-link testbutton navbuttons loggedbuttons" href="#" >Groups</button>-->
+    <!--              <a class="nav-item nav-link nav-custom" href="#" class="btn btn-simple">Create Group</a>-->
+                  <button class="nav-item nav-link testbutton navbuttons loggedbuttons"onclick='location.href="{% url 'blog:bloglist' username=request.user.username %}"' >{{ request.user.username }}'s Profile</button>
+    <!--              <a class="nav-item nav-link nav-custom" href="{% url 'accounts:logout' %}" class="btn btn-simple">Log Out</a>-->
+                  <button class="nav-item nav-link testbutton navbuttons loggedbuttons" onclick='location.href="{% url 'accounts:logout' %}"'>Log Out</button>
+                {% else %}
+    <!--              <a class="nav-item nav-link nav-custom" href="#" class="btn btn-simple">Groups</a>-->
+    <!--              <a class="nav-item nav-link nav-custom" href="{% url 'accounts:login' %}" class="btn btn-simple">Log in</a>-->
+                  <button class="nav-item nav-link testbutton navbuttons loginbutton" onclick='location.href="{% url 'accounts:login' %}"'>Log in</button>
+    <!--              <a class="nav-item nav-link nav-custom" href="{% url 'accounts:signup' %}" class="btn btn-simple">Register</a>-->
+                  <button class="nav-item nav-link testbutton navbuttons registerbutton" onclick='location.href="{% url 'accounts:signup' %}"'>Register</button>
+                {% endif %}
+
+                <form method="GET" action="{% url 'blog:search' %}" class="form-inline my-2 my-lg-0">
+                  <input class="form-control mr-sm-3 my-sm-3 searchinput" type="search" placeholder="Search Blogs" aria-label="Search" id="query" name="query" value="{{ request.GET.query }}">
+    <!--              <button class="btn btn-outline-info my-2 " type="submit">Search</button>-->
+                  <button class="testbutton searchbutton" type="submit">Search</button>
+                </form>
+
+              </div>
+
+
+            </div>
+
+<!-- Removed search from here and shifted above -->
+
+      </div>
+    </nav>
+
+    </div>
+
+    <br>
+    <div class="full-body tc">
+      <div class="container ">
+
+        {% block content %}
+
+        {% endblock %}
+
+      </div>
+    </div>
+
+
+      <br>
+      <br>
+      <br>
+
+    {# Custom js #}
+    <script src="{% static 'js/copytoclip.js' %}"></script>
+
+    {# bootstrap js #}
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+</body>
+</html>
