@@ -1,6 +1,10 @@
 # BlogCreator
+![Home](https://github.com/surajaiswal13/BlogCreator/blob/master/Md%20Resources/BlogCreator%20Home.JPG)
 
-<img src="" width=35 height=25> 
+![Register](https://github.com/surajaiswal13/BlogCreator/blob/master/Md%20Resources/BlogCreator%20Register.JPG)
+
+![Login](https://github.com/surajaiswal13/BlogCreator/blob/master/Md%20Resources/BlogCreator%20Login.JPG)
+
 - A website where we can create and share beautiful blogs with anyone, this website is created with respect to industry standards
 
 ## :desktop_computer:	Installation
