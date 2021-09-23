@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-wb-o!_mwml_=+%e&nl1c&h$w(84x@l-0dky25zt@yyar5wz0=a
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['newblogcreator.eba-5xvg8ur6.us-west-2.elasticbeanstalk.com']
 
 
 # Application definition
@@ -124,10 +124,10 @@ USE_TZ = True
 
 
 STATIC_URL = '/static/'
-
-STATICFILES_DIRS = [
-    os.path.join(BASE_DIR,'static'),
-]
+STATIC_ROOT = 'static'
+# STATICFILES_DIRS = [
+#     os.path.join(BASE_DIR,'static'),
+# ]
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
