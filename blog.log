@@ -88,3 +88,28 @@
 2021-09-03 20:58:08,704:blog:INFO:BlogListView -get_queryset Success
 2021-09-03 20:58:08,704:blog:INFO:BlogListView -get_queryset Success
 2021-09-03 20:58:08,704:blog:INFO:BlogListView -get_queryset Success
+2021-09-07 19:44:36,298:blog:INFO:BlogCreateView Form Validation Success
+2021-09-07 19:44:36,298:blog:INFO:BlogCreateView Form Validation Success
+2021-09-07 19:44:36,298:blog:INFO:BlogCreateView Form Validation Success
+2021-09-07 19:44:36,298:blog:INFO:BlogCreateView Form Validation Success
+2021-09-07 19:44:36,298:blog:INFO:BlogCreateView Form Validation Success
+2021-09-07 19:44:36,384:blog:INFO:BlogCreate - get_absolute_url success
+2021-09-07 19:44:36,384:blog:INFO:BlogCreate - get_absolute_url success
+2021-09-07 19:44:36,384:blog:INFO:BlogCreate - get_absolute_url success
+2021-09-07 19:44:36,384:blog:INFO:BlogCreate - get_absolute_url success
+2021-09-07 19:44:36,384:blog:INFO:BlogCreate - get_absolute_url success
+2021-09-07 19:46:44,907:blog:INFO:BlogCreateView Form Validation Success
+2021-09-07 19:46:44,907:blog:INFO:BlogCreateView Form Validation Success
+2021-09-07 19:46:44,907:blog:INFO:BlogCreateView Form Validation Success
+2021-09-07 19:46:44,907:blog:INFO:BlogCreateView Form Validation Success
+2021-09-07 19:46:44,907:blog:INFO:BlogCreateView Form Validation Success
+2021-09-07 19:46:44,994:blog:INFO:BlogCreate - get_absolute_url success
+2021-09-07 19:46:44,994:blog:INFO:BlogCreate - get_absolute_url success
+2021-09-07 19:46:44,994:blog:INFO:BlogCreate - get_absolute_url success
+2021-09-07 19:46:44,994:blog:INFO:BlogCreate - get_absolute_url success
+2021-09-07 19:46:44,994:blog:INFO:BlogCreate - get_absolute_url success
+2021-09-23 21:09:39,612:blog:INFO:BlogListView -get_queryset Success
+2021-09-23 21:09:39,612:blog:INFO:BlogListView -get_queryset Success
+2021-09-23 21:09:39,612:blog:INFO:BlogListView -get_queryset Success
+2021-09-23 21:09:39,612:blog:INFO:BlogListView -get_queryset Success
+2021-09-23 21:09:39,612:blog:INFO:BlogListView -get_queryset Success
