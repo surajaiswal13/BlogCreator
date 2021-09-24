@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-wb-o!_mwml_=+%e&nl1c&h$w(84x@l-0dky25zt@yyar5wz0=a
 DEBUG = True
 
 ALLOWED_HOSTS = ['newblogcreator.eba-5xvg8ur6.us-west-2.elasticbeanstalk.com','bloggshoew.eba-c2kehui7.us-west-2.elasticbeanstalk.com'
-                    , 'new-blog.eba-bfhv5gns.us-west-2.elasticbeanstalk.com']
+                    , 'new-blog.eba-bfhv5gns.us-west-2.elasticbeanstalk.com','127.0.0.1' , 'blogshow.us-east-2.elasticbeanstalk.com ']
 
 
 # Application definition
