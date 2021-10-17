@@ -59,6 +59,9 @@ $ python manage.py migrate
 $ pthon manage.py runserver
 ```
 
+# Deployed Link - http://blogshare.eba-upj2fpdp.us-west-2.elasticbeanstalk.com/ 
+# NOTE : Static Files not loaded due to low resources(S3) on free tier 
+
 ## Contributors <img src="https://raw.githubusercontent.com/TheDudeThatCode/TheDudeThatCode/master/Assets/Developer.gif" width=35 height=25> 
 
 - Suraj Jaiswal
