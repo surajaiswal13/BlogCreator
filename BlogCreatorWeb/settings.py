@@ -15,6 +15,7 @@ from pathlib import Path
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 # BASE_DIR = Path(__file__).resolve().parent.parent
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
 TEMPLATE_DIR = os.path.join(BASE_DIR,'templates')
 
 # Quick-start development settings - unsuitable for production
@@ -24,10 +25,15 @@ TEMPLATE_DIR = os.path.join(BASE_DIR,'templates')
 SECRET_KEY = 'django-insecure-wb-o!_mwml_=+%e&nl1c&h$w(84x@l-0dky25zt@yyar5wz0=a'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = ['newblogcreator.eba-5xvg8ur6.us-west-2.elasticbeanstalk.com','bloggshoew.eba-c2kehui7.us-west-2.elasticbeanstalk.com'
-                    , 'new-blog.eba-bfhv5gns.us-west-2.elasticbeanstalk.com','127.0.0.1' , 'blogshow.us-east-2.elasticbeanstalk.com ']
+ALLOWED_HOSTS = ['127.0.0.1',
+                'localhost',
+                'blogshare.eba-upj2fpdp.us-west-2.elasticbeanstalk.com',
+                 '*',
+                '.elasticbeanstalk.com',
+                '.compute-1.amazonaws.com', # allows viewing of instances directly
+                ]
 
 
 # Application definition
