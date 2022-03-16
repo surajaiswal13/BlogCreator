@@ -18,7 +18,7 @@
 
 ##### NOTE: Use requirements.txt file for easy installations
 
-## :gear: Setting up encironment for project
+## :gear: Setting up environment for project
 
 1. Create a Environment using below Command
 ```
